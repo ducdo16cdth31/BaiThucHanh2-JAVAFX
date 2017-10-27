@@ -1,0 +1,21 @@
+HBox{
+    -fx-alignment: center;
+    -fx-padding: 13px;
+}
+Label{
+    -fx-font-size: 16pt;
+
+}
+Button{
+    -fx-font-size: 21pt;
+    -fx-background-color: #7e57c2;
+}
+hb{
+    -fx-alignment: center;
+}
+GridPane{
+    -fx-background-color: #fff8e1;
+}
+#firstMatrix, #secondMatrix, #resultMatrix{
+    -fx-background-color: #b085f5;
+}

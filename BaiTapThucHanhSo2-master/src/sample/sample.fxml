@@ -1,0 +1,38 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <children>
+        <HBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <children>
+                <TableView fx:id="firstMatrix" prefHeight="200"/>
+                <Label text="+"/>
+                <TableView fx:id="secondMatrix" prefHeight="200"/>
+                <Label text="="/>
+                <TableView fx:id="resultMatrix" prefHeight="200"/>
+            </children>
+
+        </HBox>
+        <HBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <children >
+                <Label  text="m = " />
+                <TextField fx:id="txtcol"/>
+                <Label  text="n = " />
+                <TextField fx:id="txtrow"/>
+            </children>
+        </HBox>
+        <HBox fx:id="hb" GridPane.columnIndex="0" GridPane.rowIndex="3" spacing="50">
+            <children>
+                <Button text="Khởi tạo" onAction="#KhoiTaoClick"/>
+                <Button text="Cộng" onAction="#CongClick"/>
+                <Button text="Xóa" onAction="#XoaClick"/>
+            </children>
+        </HBox>
+    </children>
+</GridPane>
